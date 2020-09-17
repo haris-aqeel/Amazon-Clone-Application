@@ -1,9 +1,15 @@
+@import url(//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember);
+
 .header{
     background-color: #131921;
     height: 53px;
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
 }
 
@@ -17,19 +23,22 @@
 .header__search{
     display: flex;
     flex: 1;
+    border-radius: 2px;
 }
 
 .header__searchInput{
-    padding: 7px 12px;
+    padding: 9px 12px;
     border: none;
     width: 100%;
+    color: #111;
+    line-height: 15px;
 }
 
 .header__searchIcon{
     background-color: #cd9042;
-    height: 30px!important;
-    width: 30px!important;
-    padding: 5px;
+    height: 35px!important;
+    width: 33px!important;
+    padding: 7px;
 }
 
 .header__nav{
@@ -43,12 +52,11 @@
 }
 
 .header__option{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .header__optionNumberOne{
@@ -57,4 +65,17 @@
 .header__optionNumberTwo{
     font-size: 13px;
     font-weight: 800;
+}
+
+.header__optionBasket{
+    margin: 0 10px;
+    display: flex;
+
+}
+
+.header__optionBasket span{
+    align-self: flex-start;
+    font-weight: 800;
+    padding: 1px;
+    font-size: 13px;
 }

@@ -1,3 +1,5 @@
+import { Satellite } from "@material-ui/icons";
+
 export const initialState = {
     basket :[]
 }
@@ -11,7 +13,12 @@ const reducer = (state, action) => {
                 basket: [...state.basket, action.item]
             };
         case 'Remove_From_Basket':
-            return state;
+            let remArray = state.basket.filter(({id})=> id !== action.item.id)
+            
+            return {
+                ...state,
+                basket: remArray
+            };
             break
         default: 
             return state;

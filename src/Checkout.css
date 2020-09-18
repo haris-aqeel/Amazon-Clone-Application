@@ -1,7 +1,13 @@
 .checkout{
-
+    padding: 23px 23px;
 }
 
 .checkout__Add{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.checkout__title{
     
 }

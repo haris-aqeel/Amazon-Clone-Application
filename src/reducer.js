@@ -1,7 +1,8 @@
 import { Satellite } from "@material-ui/icons";
 
 export const initialState = {
-    basket :[]
+    basket :[],
+    user: null
 }
 
 const reducer = (state, action) => {
@@ -19,7 +20,13 @@ const reducer = (state, action) => {
                 ...state,
                 basket: remArray
             };
-            break
+            
+        case "Set_User":
+            return{
+                ...state,
+                user: action.user
+            }
+            
         default: 
             return state;
     }

@@ -6,7 +6,7 @@ import StateProvider from './StateProvider';
 
 
 ReactDOM.render(
-    <StateProvider initialState = {initialState} reducer = {reducer} >
+    <StateProvider initialState = { initialState } reducer = {reducer} >
         <App />
     </StateProvider>
     ,document.getElementById('root'));
